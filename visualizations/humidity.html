@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Add a title here -->
-
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
@@ -18,10 +17,68 @@
 
   <body>
     <!-- Start of navbar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class = navbar-header">
+          <a class="navbar-brand" href="../index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right", list-style=none>
+            <li class="nav-item">
+              <a class="nav-link" href="../data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../comparison.html">Comparisons</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../visualizations/cloudiness.html">Cloudiness</a>
+                <br><a class="dropdown-item active" href="../visualizations/humidity.html">Humidity</a>
+                <br><a class="dropdown-item" href="../visualizations/temp.html">Temperature</a>
+                <br><a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+                <div class="dropdown-divider"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- End of navbar -->
 
     <!-- Start of container -->
-
+  <div class = "container">
+    <dive class = "row">
+      <div class = "col-md-8">
+        <h2>Latitude vs. Humidity</h2>
+        <hr>
+        <img src="../assets/images/Fig2.png" class="img-fluid" alt="..." align = "center">
+        <p>This scatterplot graph represents cities latitudes and their respective max humidities.
+          <br>
+          <br>
+          Based on the clusters in this graph, cities are overall more likely to have higher humidities than lower humidities.
+          However, despite this, there does not seem to be a strong correlation here showing a relationship between humdiity and
+          latitude. 
+        </p>
+      </div>
+      <div class = "col-md-3">
+        <h2>Visualizations</h2>
+        <a href = "../visualizations/cloudiness.html">
+          <img src="../assets/images/Fig3.png" class="img-fluid" alt="..." align="left" width ="400">
+        </a>
+        <a href = "../visualizations/temp.html">
+          <img class = "img-fluid" src="../assets/images/Fig1.png" align="left" width = "400"> 
+        </a>
+        <a href = "../visualizations/wind.html">
+          <img src="../assets/images/Fig4.png" class="img-fluid" alt="..." align="left" width = "400">
+        </a>
+      </div>
+    </div>
+  </div>
           <!-- Start of Visualizations imageNav Area -->
           <!-- End of the Visualizations imageNav Area -->
 
